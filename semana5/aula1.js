@@ -72,93 +72,93 @@
 //     console.log(`5 x ${i} = ${resultado}`);
 // }
 
-const prompt = require('prompt-sync')();
+// const prompt = require('prompt-sync')();
 
-const frutas = [];
-
-
-for (let i = 0; i < 4; i++) {
-    const fruta = prompt(`Digite a ${i + 1}ª fruta: `);
-    frutas.push(fruta);
-}
-
-frutas.shift();
-
-console.log(`As frutas inseridas são ${frutas}`);
+// const frutas = [];
 
 
-const prompt = require('prompt-sync')();
-const numeros=[];
+// for (let i = 0; i < 4; i++) {
+//     const fruta = prompt(`Digite a ${i + 1}ª fruta: `);
+//     frutas.push(fruta);
+// }
 
-for (let i =0; i<5; i++){
-    const numero= prompt(`Digite o numero ${i+1}: `);
-    numeros.push(numero)
-}
+// frutas.shift();
 
-
-console.log(`Os numeros do array são: ${numeros}`)
-
-const prompt = require('prompt-sync')();
-const numeros=[];
-
-for (let i =0; i<5; i++){
-    const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
-    numeros.push(numero)
-}
+// console.log(`As frutas inseridas são ${frutas}`);
 
 
-const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+// const prompt = require('prompt-sync')();
+// const numeros=[];
 
-console.log("A soma de todos os elementos do array é:", soma);
-
-const prompt = require('prompt-sync')();
-
-
-const numeros= [];
-
-
-for (let i =0; i<5; i++){
-    const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
-    numeros.push(numero)
-}
-
-const numerosOrdenados = numeros.sort();
-
-console.log("A ordem crescente dos numeros do array é:", numerosOrdenados);
-
-const prompt = require('prompt-sync')();
+// for (let i =0; i<5; i++){
+//     const numero= prompt(`Digite o numero ${i+1}: `);
+//     numeros.push(numero)
+// }
 
 
-const numeros= [];
+// console.log(`Os numeros do array são: ${numeros}`)
 
-for (let i =0; i<5; i++){
-    const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
-    numeros.push(numero)
-}
+// const prompt = require('prompt-sync')();
+// const numeros=[];
 
-const pares = numeros.filter(num =>{
-    if(num%2 ==0){
-        return true
-    }
-});
-
-console.log("Os numeros pares do array é:", pares);
+// for (let i =0; i<5; i++){
+//     const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
+//     numeros.push(numero)
+// }
 
 
+// const soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+
+// console.log("A soma de todos os elementos do array é:", soma);
+
+// const prompt = require('prompt-sync')();
 
 
-const prompt = require('prompt-sync')();
+// const numeros= [];
 
 
-const numeros= [];
+// for (let i =0; i<5; i++){
+//     const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
+//     numeros.push(numero)
+// }
 
-for (let i =0; i<5; i++){
-    const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
-    numeros.push(numero)
-}
+// const numerosOrdenados = numeros.sort();
 
-const quadrado = numeros.map(num =>{
-    return num ** 2
-});
+// console.log("A ordem crescente dos numeros do array é:", numerosOrdenados);
 
-console.log("O quadrado de cada numero é:", quadrado);
+// const prompt = require('prompt-sync')();
+
+
+// const numeros= [];
+
+// for (let i =0; i<5; i++){
+//     const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
+//     numeros.push(numero)
+// }
+
+// const pares = numeros.filter(num =>{
+//     if(num%2 ==0){
+//         return true
+//     }
+// });
+
+// console.log("Os numeros pares do array é:", pares);
+
+
+
+
+// const prompt = require('prompt-sync')();
+
+
+// const numeros= [];
+
+// for (let i =0; i<5; i++){
+//     const numero = parseInt(prompt(`Digite o numero ${i + 1}: `));
+//     numeros.push(numero)
+// }
+
+// const quadrado = numeros.map(num =>{
+//     return num ** 2
+// });
+
+// console.log("O quadrado de cada numero é:", quadrado);
