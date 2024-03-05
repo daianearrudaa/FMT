@@ -1,5 +1,5 @@
 const imagens = document.getElementById('imagens')
-fetch('https://api.thecatapi.com/v1/images/search?limit=10')
+fetch('https://api.thecatapi.com/v1/images/search?limit=10',{methodo:'GET'})
 .then( response=>{
     if(!response.ok){
         throw new Error('Não foi possivel obter as imagens')

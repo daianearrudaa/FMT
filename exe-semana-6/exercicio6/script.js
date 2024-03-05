@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 function buscaCep(cep){
-    fetch(`https://viacep.com.br/ws/${cep}/json`)
+    fetch(`https://viacep.com.br/ws/${cep}/json`, {methodo:'GET'})
     .then(response=>{
         if(!response.ok){
             throw new Error("Não foi possivel localizar dados")
@@ -8,8 +8,8 @@ function buscaCep(cep){
         return response.json()
     })
     .then(data=>{
-        if(data.logradouro || data.complemento || data.bairro || data.uf){
-            const string= `CEP: ${cep}\n Rua: ${data.logradouro}\n Bairro: ${data.bairro}\n Complemento: ${data.complemento}\n UF: ${data.uf}`
+        if(data.logradouro || data.complemento || data.bairro ||data.localidade|| data.uf){
+            const string= `CEP: ${cep}\n Rua: ${data.logradouro}\n Bairro: ${data.bairro}\n Complemento: ${data.complemento}\n Localidade: ${data.localidade}/${data.uf}`
             mostrarDados(string)
         }else{
             mostrarDados('Dados nao encontrados!')

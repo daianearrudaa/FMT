@@ -30,7 +30,7 @@
 //     if (array.length === 0) {
 //         return 0; // Retorna 0 se o array estiver vazio para evitar divisão por zero
 //     }
-    
+
 //     const soma = array.reduce((total, numero) => total + numero, 0);
 //     return soma / array.length;
 // };
@@ -162,3 +162,25 @@
 // });
 
 // console.log("O quadrado de cada numero é:", quadrado);
+
+ function getUserInfo() {
+     new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let user = {
+                nome: 'Daiane',
+                idade: 33,
+                email: 'daiane@exemplo.com'
+            }
+            resolve(user);
+        }, 2000);
+    })
+   
+}
+
+async function playGetUser(){
+   let retorno = await getUserInfo();
+   console.log(retorno) 
+}
+
+playGetUser();
+
