@@ -1,8 +1,12 @@
 class Produto{
-    constructor(nome, preco, quantidade){
-        this.nome= nome;
-        this.preco= preco;
-        this.quantidade= quantidade;
+    nome;
+    preco;
+    quantidade;
+
+    constructor(valornome, valorpreco, valorquantidade){
+        this.nome= valornome;
+        this.preco= valorpreco;
+        this.quantidade= valorquantidade;
     }
 
      Vender(quantidadeVendida){
@@ -29,18 +33,18 @@ class Produto{
 }
 
 class Pessoa{
-    constructor(){
-        this.nome = nome;
-        this.idade= idade;
-        this.profissao= this.profissao;
+    constructor(nomePessoa, idadePessoa, profissaoPessoa){
+        this.nome = nomePessoa;
+        this.idade= idadePessoa;
+        this.profissao= profissaoPessoa;
     }
 }
 
 class Cliente extends Pessoa{
-    constructor(nome, idade, profissao, telefone, email, clienteDesde){
-        super(nome, idade, profissao);
-        this.telefone= telefone;
-        this.email = email;
+    constructor(nomePessoa, idadePessoa, profissaoPessoa, telefonePessoa, emailPessoa, clienteDesde){
+        super(nomePessoa, idadePessoa, profissaoPessoa);
+        this.telefone= telefonePessoa;
+        this.email = emailPessoa;
         this.clienteDesde = clienteDesde;
 
     }
